@@ -29,7 +29,7 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/samsung/a30dd/prebuilt/Image
+TARGET_PREBUILT_KERNEL := device/samsung/a40/prebuilt/Image
 
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPRL14A002RU
 
@@ -50,6 +50,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP specific build flags
 RECOVERY_VARIANT := twrp
+BOARD_HAS_NO_REAL_SDCARD := false
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
@@ -68,5 +69,5 @@ TW_EXCLUDE_TWRPAPP := true
 TW_NO_LEGACY_PROPS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/a30dd/prebuilt/recovery_dtbo
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/a40/prebuilt/recovery_dtbo
 PLATFORM_SECURITY_PATCH := 2099-12-31
