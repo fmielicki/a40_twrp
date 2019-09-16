@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter a30dd,$(TARGET_DEVICE)),)
+ifneq ($(filter a40,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
